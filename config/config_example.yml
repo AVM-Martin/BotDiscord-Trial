@@ -1,0 +1,7 @@
+token: ""
+
+mysql:
+  host: "localhost"
+  user: "root"
+  password: ""
+  database: "jollybot_db"
