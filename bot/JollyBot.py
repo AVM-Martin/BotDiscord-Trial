@@ -9,7 +9,7 @@ class JollyBot(BOT.Bot):
 
     async def on_ready(self):
         # change presence
-        await client.change_presence(activity=discord.Game(name="Playing with !help"));
+        await self.change_presence(activity=discord.Game(name="Playing with !help"));
         #
-        print("Logged in as {0.name} with {0.id} version {1}".format(client.user));
+        print("Logged in as {0.name} with {0.id}".format(self.user));
         print("------------------------------");

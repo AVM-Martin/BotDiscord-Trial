@@ -1,5 +1,6 @@
 import yaml;
 import bot.JollyBot as JB;
+import cogs.Data as DATA;
 
 def run():
     # import data from config.yml
@@ -14,12 +15,12 @@ def run():
 
     # start bot
 
-    client = JB.JollyBot(command_prefix = "!");
+    bot = JB.JollyBot(command_prefix = "!");
 
     cogs = [
-        Data(bot, host=host, user=user, password=password, db=database)
+        DATA.Data(bot, host=host, user=user, password=password, db=database)
     ];
 
-    client.start_bot(cogs, TOKEN);
+    bot.start_bot(cogs, TOKEN);
 
 run();
