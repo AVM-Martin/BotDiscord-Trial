@@ -9,7 +9,6 @@ class DB_Users:
         try:
             with self._connection.cursor() as cursor:
                 sql = "update `Users` set `{0}` = %s where `ServerID` = %s and `AccountID` = %s".format(dataType);
-                print(sql);
                 cursor.execute(sql, (data, serverID, accountID));
             self._connection.commit();
         except:
