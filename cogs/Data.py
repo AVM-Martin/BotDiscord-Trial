@@ -4,9 +4,9 @@ import cogs.utils.MyDatabase as DB;
 import cogs.utils.NIMCheckers as NIMCheckers;
 
 class Data(BOT.Cog):
-    def __init__(self, bot):
+    def __init__(self, bot, host="localhost", user="root", password="", db="avmlearning_db", charset="latin1"):
         self.bot = bot;
-        self._db = DB.MyDatabase(host="localhost", user="root", password="", db="avmlearning_db", charset="latin1");
+        self._db = DB.MyDatabase(host=host, user=user, password=password, db=db, charset=charset);
 
     async def _setGeneralData(self, ctx, data, dataType, func):
         # delete command message
