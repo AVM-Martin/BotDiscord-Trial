@@ -12,13 +12,14 @@ def run():
     user = config["mysql"]["user"];
     password = config["mysql"]["password"];
     database = config["mysql"]["database"];
+    charset = config["mysql"["charset"];
 
     # start bot
 
     bot = JB.JollyBot(command_prefix = "!");
 
     cogs = [
-        DATA.Data(bot, host=host, user=user, password=password, db=database)
+        DATA.Data(bot, host=host, user=user, password=password, db=database, charset=charset)
     ];
 
     bot.start_bot(cogs, TOKEN);
