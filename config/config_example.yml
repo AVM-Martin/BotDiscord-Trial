@@ -5,3 +5,4 @@ mysql:
   user: "root"
   password: ""
   database: "jollybot_db"
+  charset: "latin1"

@@ -12,7 +12,7 @@ def run():
     user = config["mysql"]["user"];
     password = config["mysql"]["password"];
     database = config["mysql"]["database"];
-    charset = config["mysql"["charset"];
+    charset = config["mysql"]["charset"];
 
     # start bot
 
