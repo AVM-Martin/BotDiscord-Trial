@@ -1,5 +1,7 @@
 # BotDiscord-JollyData
 
+Just a random project of discord's bot.
+
 ```
 virtualenv -p python3 ~/.virtualenvs/**discordBot**/
 source ~/.virtualenvs/**discordBot**/bin/activate
